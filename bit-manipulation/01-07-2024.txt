@@ -1,0 +1,11 @@
+// Java program to find XOR without using ^
+	static int XOR(int x, int y)
+	{
+		return ((x | y) - (x & y));
+	}
+
+	public static void main(String[] args)
+	{
+		int x = 3, y = 5;
+		System.out.print(XOR(x, y) + "\n");
+	}
