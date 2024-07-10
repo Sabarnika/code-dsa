@@ -1,0 +1,10 @@
+/* Function to get parity of number n.It returns 1 if n has odd parity, and returns 0 if n has even parity */
+    static boolean getParity(int n)
+    {
+        boolean parity = false;
+        while(n != 0)
+        {
+            parity = !parity;
+            n = n & (n-1);
+        }
+        return parity;
