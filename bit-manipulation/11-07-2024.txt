@@ -1,0 +1,14 @@
+//2's complement pf a no
+#include <stdio.h>
+int twosComplementSigned(int n) {
+    int inverted = ~n;
+    int complement = inverted + 1;
+    return complement;
+}
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    int complement = twosComplementSigned(number);
+    printf("Two's complement of %d is: %d\n", number, complement);
+}
