@@ -1,0 +1,16 @@
+//clear nth bit
+import java.io.*;
+class GFG {
+    public static void main(String[] args)
+    {
+        int num = 7, pos = 1;
+        num = unset(num, pos);
+        System.out.println(num);
+    }
+    public static int unset(int num, int pos)
+    {
+        // Second step is to bitwise and this  number with given number
+        num = num & (~(1 << pos));
+        return num;
+    }
+}
